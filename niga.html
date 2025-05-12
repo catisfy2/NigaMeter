@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma Design Implementation</title>
+    
+    <!-- Import Goblin One font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Main page styling */
+        body {
+            margin: 0;
+            background: rgba(40, 47, 51, 1); /* Dark background */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column; /* Up to down flow */
+            align-items: center; /* Top-middle alignment */
+            gap: 20px; /* Space between elements */
+            padding: 135px 200px; /* Vertical and horizontal padding */
+            box-sizing: border-box;
+        }
+
+        /* First container styling */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        /* Main heading text */
+        .main-heading {
+            font-family: 'Goblin One', cursive;
+            font-size: 65px;
+            color: white;
+            text-align: center;
+            margin: 0;
+        }
+
+        /* Second container with row layout */
+        .container-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 0px; /* Vertical and horizontal padding */
+        }
+
+        /* Warning text styling */
+        .warning-text {
+            font-family: 'Goblin One', cursive;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            margin: 0;
+        }
+
+        /* Button container styling */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            padding: 70px 10px;
+            width: 100%;
+        }
+
+        /* Common button styling */
+        .btn {
+            font-family: 'Goblin One', cursive;
+            font-size: 20px;
+            background: rgba(248, 248, 248, 1);
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+            text-decoration: none; /* Remove underline from links */
+            color: black; /* Default text color */
+        }
+
+        /* Button press effect */
+        .btn:active {
+            box-shadow: 0 0 10px rgba(229, 225, 225, 0.5);
+            opacity: 0.5;
+        }
+
+        /* Special hover effect for second button */
+        .btn-special:hover {
+            content: "Yess ami kalo";
+            /* Note: Changing text content requires JavaScript.
+               This changes the button color on hover instead. */
+            background: #d3d3d3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main content container -->
+    <div class="container">
+        <h1 class="main-heading">Are you Niga???</h1>
+        
+        <!-- Row container with warning icon and text -->
+        <div class="container-row">
+            <!-- Add your warning icon image source here -->
+            <img src="warning-icon.png" alt="Warning" style="height: 30px;">
+            <p class="warning-text">site asking if you are really niga</p>
+        </div>
+    </div>
+
+    <!-- Button container -->
+    <div class="button-container">
+        <!-- First button links to lorem.html -->
+        <a href="lorem.html" class="btn btn-special">Yes I am 😭</a>
+        
+        <!-- Second button with hover effect -->
+        <a href="lorem.html" class="btn btn-special">Nooooo 😭</a>
+    </div>
+</body>
+</html>
